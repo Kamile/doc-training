@@ -6,7 +6,7 @@ beforeAll(async () => {
 
 describe("HomePage", () => {
   test("the page displays correctly", async () => {
-    await page.goto("http://localhost:3000/")
+    await page.goto("http://localhost:1234/")
     await page.waitForSelector("#app")
     const text = await page.evaluate(e => e.textContent, await page.$("#app"))
 

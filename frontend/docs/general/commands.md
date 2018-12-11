@@ -19,7 +19,7 @@ history irreversibly by accident.
 npm run start
 ```
 
-Starts the development server running on `http://localhost:3000`
+Starts the development server running on `http://localhost:1234`
 
 ## Cleaning
 
@@ -54,7 +54,7 @@ npm start
 ```
 
 Starts the development server and makes your application accessible at
-`localhost:3000`. Tunnels that server with `ngrok`, which means the website
+`localhost:1234`. Tunnels that server with `ngrok`, which means the website
 accessible anywhere! Changes in the application code will be hot-reloaded.
 
 ### Production
@@ -99,7 +99,7 @@ npm test
 ```
 
 Tests your application with the unit tests specified in the `**/tests/*.js` files
-throughout the application.  
+throughout the application.
 All the `test` commands allow an optional `-- [string]` argument to filter
 the tests run by Jest. Useful if you need to run a specific test only.
 
@@ -142,4 +142,3 @@ npm run lint
 ```
 
 Lints your JavaScript.
-

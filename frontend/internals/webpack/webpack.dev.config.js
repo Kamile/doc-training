@@ -20,7 +20,7 @@ module.exports = {
   // Don't use hashes in dev mode for better performance
   output: {
     ...baseConfig.output,
-    publicPath: "http://localhost:3000/",
+    publicPath: "http://localhost:1234/",
     filename: "bundle.js",
     chunkFilename: "[name].chunk.js",
   },
@@ -48,7 +48,7 @@ module.exports = {
   // See https://webpack.js.org/configuration/devtool/#devtool
   devtool: "eval-source-map",
   devServer: {
-    port: 3000,
+    port: 1234,
     hot: true,
     historyApiFallback: true,
     // If serving the React bundle through Django (ie localhost:8000),

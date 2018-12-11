@@ -38,8 +38,7 @@ output.publicPath in webpack.dev.config.js, with protocol.
 // webpack.dev.config.js
 
 output: {
-  publicPath: 'http://127.0.0.1:3000/',
+  publicPath: 'http://127.0.0.1:1234/',
   /* … */
 },
 ```
-
