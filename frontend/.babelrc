@@ -1,0 +1,26 @@
+{
+  "plugins": ["styled-components", "@babel/plugin-syntax-dynamic-import"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-flow"
+  ],
+  "env": {
+    "production": {
+      "only": ["app"],
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "@babel/transform-react-constant-elements",
+        "@babel/transform-react-inline-elements"
+      ]
+    },
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}

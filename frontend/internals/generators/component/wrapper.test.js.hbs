@@ -1,0 +1,29 @@
+import React from 'react';
+import mountAndFind from 'tests/mountAndFind';
+import {{ name }}Wrapper from '../{{ name }}.wrap';
+
+jest.mock('../{{ name }}', () => {
+  const Wrapped = () => null;
+  Wrapped.displayName = '{{ name }}';
+  return Wrapped;
+});
+
+const mountWrapped = mountAndFind('{{ name }}');
+
+describe('{{ name }}Wrapper', () => {
+  it('passes the props down to the wrapped component', () => {
+    const props = {
+      name: 'mocked_name',
+      id: 'mocked_id',
+      label: 'mocked_label',
+    };
+    const children = <span>mocked children</span>;
+    const { component } = mountWrapped(
+      <{{ name }}Wrapper {...props}>
+        {children}
+      </{{ name }}Wrapper>,
+    );
+
+    expect(component.props()).toMatchObject({...props, children});
+  });
+});

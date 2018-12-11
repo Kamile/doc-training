@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withDispatch render the wrapped component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <Connect(Wrapper)>
+    <Wrapper
+      actionDispatcher={[Function]}
+    >
+      <Component>
+        <Wrapped
+          key="overriden_prop"
+        >
+          <span />
+        </Wrapped>
+      </Component>
+    </Wrapper>
+  </Connect(Wrapper)>
+</Provider>
+`;

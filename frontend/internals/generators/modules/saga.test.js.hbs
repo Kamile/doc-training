@@ -1,0 +1,13 @@
+import { takeEvery } from 'redux-saga/effects';
+import { {{ name }}Saga } from '../{{ name }}.saga';
+
+describe('{{ name }}Saga', () => {
+  it('listens to the right event and start the right sagas', () => {
+    const saga = {{ name }}Saga();
+
+    expect(saga.next().value).toEqual(
+      takeEvery(),
+    );
+    expect(saga.next().done).toBe(true);
+  });
+});
